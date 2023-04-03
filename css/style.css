@@ -91,7 +91,7 @@ h6,
 }
 
 .btn-primary:hover {
-    box-shadow: inset 0 0 0 0 var(--primary);
+    box-shadow: 0 0 0 0 var(--primary);
 }
 
 .btn-secondary:hover {
@@ -215,7 +215,7 @@ h6,
 
 
 /*** Carousel ***/
-.carousel-caption {
+.bg-caption {
     top: 0;
     left: 0;
     right: 0;
@@ -225,12 +225,12 @@ h6,
 }
 
 @media (max-width: 576px) {
-    .carousel-caption h5 {
+    .bg-caption h5 {
         font-size: 14px;
         font-weight: 500 !important;
     }
 
-    .carousel-caption h1 {
+    .bg-caption h1 {
         font-size: 30px;
         font-weight: 600 !important;
     }
@@ -258,42 +258,6 @@ h6,
     bottom: 0;
     background: var(--primary);
     border-radius: 2px;
-}
-
-.section-title.text-center::before {
-    left: 50%;
-    margin-left: -75px;
-}
-
-.section-title.section-title-sm::before {
-    width: 90px;
-    height: 3px;
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: 6px;
-    height: 5px;
-    bottom: 0px;
-    background: #FFFFFF;
-    -webkit-animation: section-title-run 5s infinite linear;
-    animation: section-title-run 5s infinite linear;
-}
-
-.section-title.section-title-sm::after {
-    width: 4px;
-    height: 3px;
-}
-
-.section-title.text-center::after {
-    -webkit-animation: section-title-run-center 5s infinite linear;
-    animation: section-title-run-center 5s infinite linear;
-}
-
-.section-title.section-title-sm::after {
-    -webkit-animation: section-title-run-sm 5s infinite linear;
-    animation: section-title-run-sm 5s infinite linear;
 }
 
 @-webkit-keyframes section-title-run {
